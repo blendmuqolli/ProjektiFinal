@@ -6,93 +6,67 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="carousel">
-      <div class="slider">
-        <section>With us you will enjoy a vacation with peace of mind</section>
-        <section>Customer support is availabe for you 24/7 wherever you are!</section>
-      </div>
-      <div class="controls">
-        <span class="arrow prev">prev</span>
-        <span class="arrow next">next</span>
-      </div>
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="navbar-text">
+            Customer support is available for you 24/7 wherever are!
+          </div>
+          <div class="navbar-text2">
+            Customer support is available for you 24/7 wherever are!
+          </div>
+        </div>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Search Flights</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <script>
-    const slider = document.querySelector('.slider')
-
-    const prev = document.querySelector('.prev')
-    const next = document.querySelector('.next')
-    
-    var direction;
-
-    next.addEventListener('click', function() {
-      direction = -1
-      carousel.style.transform = 'flex-end';
-      carousel.style.transform = 'flex-start';
-    });
-
-    next.addEventListener('click', function() {
-      direction = -1;
-      carousel.style.transform = 'flex-start';
-      slider.style.transform = 'translate(-20px)';
-    });
-
-    slider.addEventListener('transitionend', function() {
-      if (direction)
-      slider.appendChild(slider.firstElementChild);
-
-      slider.style.transition = 'none'; 
-      slider.style.transform = 'translate(0)';
-      setTimeout(function(){
-        slider.style.transition = 'alt 0.5s';
-      })
-      
-    })
-  </script>
-  <style>
-    .container{
-      width: 50%;
-      margin: 20px 10px;
-      height: 300px;
-      color: rgb(230, 230, 25);
-    }
-    .carousel {
-      width: 100%;
-      height: 50%;
-      border: 2px solid black;
-      border-radius: 3px;
-      display: flex;
-      justify-content: flex-start;
-      position: relative;
-    }
-    .slider{
-      border: 1px solid black;
-      display: flex;
-      height: 100%;
-      width: 500%;
-      flex-shrink: 0;
-      transition: all 0.5s;
-    }
-    .slider section{
-      flex-basis: 20%;
-      width: 20%;
-      flex-shrink: 0;
-      flex: 1;
-      display: flex;
-      align-items: center;
-    }
-    .arrow{
-      position: absolute;
-      top: 10px;
-      cursor: pointer;
-    }
-    .arrow.prev{
-      left: 10px;
-    }
-    .arrow.next{
-      right: 10px;
-    }
-  </style>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+      }
+      nav ul li{
+        text-align: center;
+        color: white;
+        text-decoration: none;
+      }
+      .container{
+        height: 755px;
+        width: 100%;
+        background: url(imageB1.webp);
+        animation-name: slider;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes slider{
+        0%{background-image: url(imageB1.webp);}
+        35%{background-image: url(imageB2.webp);}
+        75%{background-image: url(imageB3.webp);}
+      }
+      .navbar-text{
+        color: goldenrod;
+        margin-left: 200px;
+      }
+      .navbar-text2{
+        color: goldenrod;
+        margin-left: 850px;
+      }
+    </style>
 </body>
 </html>
