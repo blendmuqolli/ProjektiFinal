@@ -10,7 +10,7 @@
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <div class="navbar-text">
-            Customer support is available for you 24/7 wherever are!
+            Will use you will enjoy a vacation with peace of mind
           </div>
           <div class="navbar-text">
             Customer support is available for you 24/7 wherever are!
@@ -184,44 +184,57 @@
       <img src="map1.webp" class="harta" width="300px">
       <img src="map2.webp" class="harta" width="300px"> 
       <img src="map3.webp" class="harta" width="300px"><br>
-      <div class="contener">
-        <div class="group">
-          <p class="text">You haven't found your vacation, contact us now, and we'll be happy to put together a personalized vacation.</p>
+      <div class="containerii scroll-right">
+        <marquee behavior="" direction="right">You haven't found your vacation, contact us now, and we'll be happy to put together a personalized vacation.</marquee>
+      </div><br><br>
+      <footer>
+        <div class="footeri">
+          <img src="hanania2.webp" class="hananiaa2" width="100px"><br>
+            <div class="pjesa1">
+               <h1><span style="color: goldenrod;">CONTACT US</span></h1>
+                <p><span style="color: goldenrod;">Email:	info@hanania-vacations.com<br>
+                  Address:	Dekel, Shoham Israel</span></p><br>
+                  <div class="navi4"></div>
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Search Flights</a></li>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+            </div>
         </div>
-      </div>
-      <script>
-        var style = document.createElement('style');
-        var position = 'left';
-
-        style.innerHTML = `
-        @keyframes my-animation{
-          0%{${position}: -${document.querySelector('.text').offseWidth + 10}px;}
-          100%{${position}: 100%;}
-        }`;
-
-        document.head.append(style);
-      </script>
+      </footer>
     <style>
       *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
       }
-      .group{
-        position: relative;
-        height: 30px;
+   
+      footer{
+        background-color: black;
+      }
+      .footeri{
+        width: 100px;
+        padding: 70px 30px 20px;
+        margin-left: 100px;
+      }
+      .footeri ul li a
+      {
+        text-decoration: none;
+        color: goldenrod;
+      }
+      .containerii
+      {
+        display: flex;
+        align-items: center;
+        background: black;
+        color: goldenrod;
+        margin-top: 30px;
+        width: 100%;
         overflow: hidden;
-        color: #fff;
-        background-color: #0000008e;
-        border-bottom: 2px solid goldenrod;
-        border-top: 2px solid goldenrod;
       }
-      .group .text{
-        position: absolute;
-        margin: 5px 0;
-        padding: 0;
-        width: my-animation 24s linear infinite;
-      }
+      
       .harta{
         margin-left: 150px;
         border-radius: 5px;
@@ -252,6 +265,7 @@
         width: 90%;
         display: grid;
         place-items: center;
+        overflow: hidden;
       }
       .slide-track{
         display: flex;
@@ -288,6 +302,7 @@
         width: 90%;
         display: grid;
         place-items: center;
+        overflow: hidden;
       }
       .slide-track2{
         display: flex;

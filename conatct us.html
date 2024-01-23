@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="navbar-text">
+            Will use you will enjoy a vacation with peace of mind
+          </div>
+          <div class="navbar-text">
+            Customer support is available for you 24/7 wherever are!
+          </div>
+        </div>
+      </nav>
+      <nav class="navi">
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Search Flights</a></li>
+          <li><a href="#">Home</a></li>
+          <img src="Hanania_LogoBlack_Png.webp" class="hanania" width="100px">
+        </ul>
+      </nav><br><br>
+      <div class="titulli">
+        <h1>Let's talk</h1>
+        <p>We answer your every request or question, we try to do so as<br> quickly as possible and no later than 48 hours.<br><br>
+          Try to elaborate as much as possible, preferably including the exact<br> product name in the description.</p>
+      </div><br><br>
+      <div class="container">
+        <div class="main">
+            <div class="content">
+                <form action="#" method="post">
+                    <input type="Enter your first name" name="name" placeholder="Your Name">
+        
+                    <input type="email" name="name" placeholder="Your Email">
+        
+                    <input type="Phone nummber" name="name" placeholder="Phone number">
+                    <textarea name="response" placeholder="response"></textarea>
+                    <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+                </form>
+              </div>
+              <div class="form-img">
+                <img src="contactimage.webp" alt="kontaktimg" width="500px">
+            </div>
+        </div>
+      </div><br>
+      <div class="iconattext">
+        <img src="chaticon.jpg" class="chatikona" width="40px"><br>
+        <h4>Chat:</h4><br>
+        <p>Available 24/6 at your service</p>
+        <img src="emailicon.jpg" class="emailikona" width="40px"><br>
+        <h4>Email:</h4><br>
+        <p>info@hanania-vacations.com</p>
+        <img src="locationicon.jpg" class="locationikon" width="40px"><br>
+        <h4>LOCATION:</h4><br>
+        <P>A.T. Shoham, Israel</P>
+      </div><br><br>
+      <footer>
+        <div class="footeri">
+          <img src="hanania2.webp" class="hananiaa2" width="100px"><br>
+            <div class="pjesa1">
+               <h1><span style="color: goldenrod;">CONTACT US</span></h1>
+                <p><span style="color: goldenrod;">Email:	info@hanania-vacations.com<br>
+                  Address:	Dekel, Shoham Israel</span></p><br>
+                  <div class="navi4"></div>
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Search Flights</a></li>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+            </div>
+        </div>
+      </footer>
+      <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+        footer{
+        background-color: black;
+      }
+      .footeri{
+        width: 100px;
+        padding: 70px 30px 20px;
+        margin-left: 100px;
+      }
+      .footeri ul li a
+      {
+        text-decoration: none;
+        color: goldenrod;
+      }
+        .iconattext img h4 p{
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 8%;
+        }
+        .container{
+            max-width: 700px;
+            margin-top: 0 auto;
+            margin-left: 300px;
+            margin-top: 250px;
+        }
+        .main{
+            position: relative;
+            display: flex;
+            margin: 30px 0;
+        }
+        .content{
+            flex-basis: 50%;
+            padding: 3em 3em;
+            background: rgb(178, 167, 167);
+            box-shadow: 2px 9px 49px -17px rgba(0,0,0,0,1);
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .kontaktimg{
+            border-radius: 20px;
+        }
+        .form-img{
+            flex-basis: 50%;
+            background: rgb(155, 150, 150);
+            background-size: cover;
+            padding: 40px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            align-items: center;
+            display: grid;
+        }
+        .form-img img{
+            max-width: 100%;
+        }
+        .btn
+        button
+        input{
+            border-radius: 35px;
+        }
+        .btn:hover,
+        button:hover{
+            color: #272346;
+            transition: 0.5 ease;
+        }
+        .container input textarea{
+            outline: none;
+            margin-bottom: 15px;
+            font-stretch: 16px;
+            color: #999;
+            padding: 14px 20px;
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            border: none;
+            background: white;
+            transition: 0.3s ease;
+        }
+        .container input:focus{
+            background: transparent;
+            border: 1px solid;
+        }
+        .container button{
+            font-size: 18px;
+            color: #fff;
+            width: 100%;
+            background: goldenrod;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+        .navbar{
+        background-color: black;
+        display:flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 5%;
+        }
+        .navi{
+        position: absolute;
+        background:black;
+        top: 6%;
+        right: 32%;
+        }
+      .navi ul li{
+        display: inline-flex;
+        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        }
+        .navi a
+      {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        margin-inline: 10px;
+      }
+      .navbar div{
+        color: goldenrod;
+        display: flex;
+        margin-inline: 70px;
+      }
+      .titulli
+      {
+        position: absolute;
+        top: 25%;
+        right: 42%;
+      }
+      </style>
+</body>
+</html>
